@@ -30,9 +30,9 @@
 #define BITS_WRITE(reg, mask, val) ( (reg) = ( (reg) & ~(mask) ) | ( (val) & (mask) ) ) 
 
 //BITFIELDS
-#define EXTRACT_BITFIELD(reg, hi, lo)
+#define EXTRACT_BITFIELD(reg, hi, lo) ( ((reg) >> (lo)) & ((1UL << ((hi) - (lo)+1))-1) )
 
-#define INSERT_BITFIELD(reg, hi, lo, val)
+#define INSERT_BITFIELD(reg, hi, lo, val) ( (reg) = ((reg) & ~(((1UL <<((hi)-(lo)+1))-1)<<(lo))) | ((val) << (lo)) )
 
 /*Function Define Section*/
 
