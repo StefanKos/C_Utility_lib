@@ -1,6 +1,6 @@
-#ifndef LIB_CRCUTIL_   /* Include guard */
-#define LIB_CRCUTIL_
+#ifndef LIB_CRCUTIL_H_   /* Include guard */
+#define LIB_CRCUTIL_H_
 
 
 
-#endif // LIB_CRCUTIL_
+#endif // LIB_CRCUTIL_H_

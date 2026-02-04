@@ -1,6 +1,6 @@
-#ifndef LIB_HWUTIL_   /* Include guard */
-#define LIB_HWUTIL_
+#ifndef LIB_HWUTIL_H_   /* Include guard */
+#define LIB_HWUTIL_H_
 
 
 
-#endif // LIB_HWUTIL_
+#endif // LIB_HWUTIL_H_

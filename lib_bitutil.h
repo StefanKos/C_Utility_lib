@@ -35,10 +35,12 @@
 #define INSERT_BITFIELD(reg, hi, lo, val) ( (reg) = ((reg) & ~(((1UL <<((hi)-(lo)+1))-1)<<(lo))) | ((val) << (lo)) )
 
 /*Function Define Section*/
+static inline uint32_t bit_popcount(uint32_t reg);
 
-//BIT_POPCOUNT(reg)
-//BIT_REVERSE8(reg)
-//BIT_PARITY(reg)
-//BIT_FFS(reg)
+static inline uint8_t bit_reversed(uint8_t reg);
+
+static inline uint32_t bit_parity(uint32_t reg);
+
+static inline int bit_ffs(uint32_t reg);
 
 #endif // LIB_BITUTIL_H
